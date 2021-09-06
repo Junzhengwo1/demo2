@@ -71,3 +71,26 @@ print(max(char_count.values()))
 for k, v in char_count.items():
     if v == max(char_count.values()):
         print(k)
+
+# 将字典 a={'a':100,'b':200,'d':300} k,v交换位置
+a = {'a': 100, 'b': 200, 'd': 300}
+a2 = {}
+for k, v in a.items():
+    a2[v] = k
+print(a2)
+# 第二种写法
+a = {v: k for k, v in a.items()}  # 字典推导式
+print(a)
+
+# Set 集合的相关操作 不重复的无序的 空集合的表示方式 set()
+k = {'a', 2, 'c', 'd', 2}  # 重复的话，就会去重
+print(k)
+print(len(k))
+for i in k:
+    print(i)
+k.add(10000000000)
+print(k)
+# k.pop()  # 随机删除一个
+print(k)
+k.remove('c')
+print(k)
