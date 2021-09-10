@@ -8,3 +8,7 @@ i = 0
 while i < len(s):
     print(s[i])
     i += 1
+
+# 带下标的遍历
+for a in enumerate(s):
+    print(a)
