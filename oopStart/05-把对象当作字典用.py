@@ -7,4 +7,6 @@ class Person:
         self.age = age
 
 
+p = Person('w', 18)
 
+print(p.__dict__)
