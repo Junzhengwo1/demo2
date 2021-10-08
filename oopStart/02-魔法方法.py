@@ -2,10 +2,12 @@
 
 
 class Person(object):
-    def __init__(self, name, age):  # 这个方法就是魔法方法
+    def __init__(self, name, age):  # 这个方法就是魔法方法(有点像Java的构造方法)
         self.name = name
         self.age = age
 
+    def __str__(self):  # (有点像Java的重写toString())
+        return '姓名：{},年龄：{}'.format(self.name, self.age)
     # def __del__(self):  # 对象销毁是 自动调用
     #     pass
 
@@ -13,4 +15,4 @@ class Person(object):
 p = Person('k', 56)
 
 print(p.age)
-print(repr(p))
+print(p)
