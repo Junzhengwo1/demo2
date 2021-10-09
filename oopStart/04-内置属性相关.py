@@ -1,5 +1,6 @@
 # 内置属性相关
 # __slots__
+# 笔记
 class Person:
     def __init__(self, name, age):
         self.name = name
