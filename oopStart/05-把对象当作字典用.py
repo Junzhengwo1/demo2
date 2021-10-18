@@ -1,5 +1,5 @@
 # 把对象当作字典来使用 __setitem__
-# __gititem__
+# __getitem__
 
 class Person:
     def __init__(self, name, age):
