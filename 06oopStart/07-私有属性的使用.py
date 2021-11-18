@@ -16,4 +16,5 @@ print(p.name)
 print(p._Person__height)
 # 2、定义get和set方法来获取
 
+# 3、使用property来获取
 
